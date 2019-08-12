@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:amap_base/src/map/model/latlng.dart';
+import 'package:amap_base/src/common/latlng.dart';
 import 'package:amap_base/src/search/model/indoor_data.dart';
 import 'package:amap_base/src/search/model/photo.dart';
 import 'package:amap_base/src/search/model/poi_extension.dart';

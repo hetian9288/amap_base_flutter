@@ -1,4 +1,4 @@
-import 'package:amap_base/src/map/model/latlng.dart';
+import 'package:amap_base/src/common/latlng.dart';
 
 class SubPoiItem {
   /// POI全局唯一ID [Android, iOS]

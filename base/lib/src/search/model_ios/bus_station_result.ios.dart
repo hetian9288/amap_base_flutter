@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:amap_base/src/map/model/latlng.dart';
+import 'package:amap_base/src/common/latlng.dart';
 import 'package:amap_base/src/search/model_ios/city.ios.dart';
 
 // ignore: camel_case_types

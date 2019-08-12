@@ -64,7 +64,7 @@ static AMapLocationManager *_locationManager;
         [_locationManager requestLocationWithReGeocode:YES
                                        completionBlock:^(CLLocation *location, AMapLocationReGeocode *regeocode, NSError *error) {
                                            if (error) {
-                                               result([FlutterError errorWithCode:[NSString stringWithFormat:@"%d", error.code]
+                                               result([FlutterError errorWithCode:[NSString stringWithFormat:@"%ld", (long)error.code]
                                                                           message:error.localizedDescription
                                                                           details:error.localizedDescription]);
                                            } else {
