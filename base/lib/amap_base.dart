@@ -10,8 +10,6 @@ import 'src/location/amap_location.dart';
 
 export 'amap_base.dart';
 export 'src/common/permissions.dart';
-export 'src/common/permissions.dart';
-export 'src/common/permissions.dart';
 export 'src/common/latlng.dart';
 export 'src/location/amap_location.dart';
 export 'src/location/model/location.dart';
