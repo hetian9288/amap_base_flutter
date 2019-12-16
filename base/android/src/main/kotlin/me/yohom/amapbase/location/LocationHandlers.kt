@@ -33,6 +33,8 @@ object Init : LocationMethodHandler {
 
         locationClient = AMapLocationClient(registrar.activity().applicationContext).apply {
             setLocationListener {
+                log("AMapLocationClient -> " + it)
+                log("AMapLocationClient json -> " + UnifiedAMapLocation(it).toFieldJson())
                 eventSink?.success(UnifiedAMapLocation(it).toFieldJson())
             }
         }

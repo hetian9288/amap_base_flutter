@@ -90,6 +90,11 @@ static AMapLocationManager *_locationManager;
     }
 }
 
+- (void)amapLocationManager:(AMapLocationManager *)manager doRequireLocationAuth:(CLLocationManager*)locationManager
+{
+    [locationManager requestAlwaysAuthorization];
+}
+
 - (FlutterError *_Nullable)onListenWithArguments:(id _Nullable)arguments eventSink:(FlutterEventSink)events {
     _sink = events;
     return nil;
@@ -98,6 +103,8 @@ static AMapLocationManager *_locationManager;
 - (FlutterError *_Nullable)onCancelWithArguments:(id _Nullable)arguments {
     return nil;
 }
+
+
 
 @end
 

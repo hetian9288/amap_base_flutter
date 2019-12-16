@@ -70,6 +70,7 @@ class Location {
   });
 
   Location.fromJson(Map<String, dynamic> json) {
+    print(json);
     accuracy = json['accuracy'] as num;
     adCode = json['adCode'] as String;
     address = json['address'] as String;
